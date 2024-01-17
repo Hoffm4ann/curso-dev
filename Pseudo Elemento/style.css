@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input {
+border: 1px solid brown;
+color: sandybrown;
+}
+
+input::placeholder {
+    color: gray;
+}
+p {
+    color: blue;
+
+}
+p::first-letter {
+    color: red;
+}
+p::first-line {
+    color: purple;
+}
+a {
+    color: cornflowerblue;
+}
+a::after{
+    content: "🚀";
+}
+a::before {
+    content: "🚀";
+}

@@ -1,0 +1,36 @@
+/*
+All:       ➡️para todos os dispositivos.
+Braille:   ➡️ Para dispositivos tateis.
+Embossed:  ➡️ Para dispositivos que imprimem em braile.
+Handheld:  ➡️ Para dispositivos portateis, geralmente com telas pequenas e banda limitada.
+Print:     ➡️ Para impressao em papel.
+Projection:➡️ Para apresentaçoes com PPS.
+Screen:    ➡️ Para monitores ou dispositivos com telas coloridas e resolucao adequada.
+Speech:    ➡️ Para sintetizadores de voz, As CSS 2 tem uma especificacao de css chamada Aural,
+onde podemos formatar a voz dos sintetizadores.
+
+Orientaçao
+Portatil: ➡️altuma maior que a largura.
+Landscape:➡️Largura maior que a altura.
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div{
+    height: 700px;
+    width: 700px;
+    background: blue;
+}
+@media screen and (max-width: 600px) and (orientation: landscape){
+    div {background: red;
+    width: 200px;
+    height: 200px;}
+}
+/*ao abrir no navegador em tela cheia a div esta em azul,
+se clicar em inspecionar e for deminuindo a tela quando chegar em 600px
+ela nao aplica mais o azul e sim o vermelho e muda o tamanha para 200px...
+que seria a configuraçao para uma tela menor.
+@media aplicado para todo tipo de tela
+*/

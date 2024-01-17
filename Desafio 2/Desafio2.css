@@ -1,0 +1,95 @@
+    * {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-image: url(../img/raider.png);
+        background-repeat: no-repeat;
+        width: 595.18px;
+        background-position: 121px 278px;
+    }
+
+    header {
+        display: inline-block;
+        margin-left: 42px;
+        margin-top: 47px;
+    }
+
+    .link-header {
+        margin-left: 42px;
+        margin-top: 47px;
+        line-height: 21px;
+        font-size: 14px;
+        letter-spacing: 0, 875px;
+
+    }
+
+    .button-header {
+        width: 124px;
+        height: 51px;
+        border-radius: 6px;
+        border: 1px solid #4CB538;
+        background: #6FBF44;
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 1px;
+        cursor: pointer;
+        margin-left: 32px;
+    }
+
+     h1 {
+        width: 582px;
+        margin-top: 342px;
+        margin-left: 801px;
+        margin-bottom: 47px;
+        color: #161A49;
+        font-size: 62px;
+        font-weight: 700;
+        line-height: 81px;
+        letter-spacing: 0.596px;
+
+    }
+
+    h2 {
+        margin-left: 801px;
+        margin-bottom: 55px;
+        width: 493px;
+        color: #4B505A;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 33px;
+        letter-spacing: 0.5px;
+    }
+
+    .button-read {
+        width: 112px;
+        margin-left: 801px;
+        color: #6FBF44;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 1px;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+    }
+    /*poderia ter adicionado a imagem pelo html colocado uma classe se casso teria mais de uma imagem
+    depois colocaria o conteudo de texto dentro de uma div
+    a imagem a a div estilizaria com display inlineblock
+    div {
+        display:inline block;
+        margin xxx¨;
+                 }
+         img:
+         {
+           inlineblock;
+         margin xxx
+                }
+usar o border box no inicio do css no *.* para todo site ficar no borderbox
+para mudar o tomanho do texto poderia setar o tamanho da div, assim reduziria o texto ja que os tres estao tamanhos proximos
+para importar a fonte pelo css usa o @importa url link da fonte
+    */

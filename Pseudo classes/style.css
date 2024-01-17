@@ -1,0 +1,76 @@
+/* PSEUDO CLASSES (Pseudo elementos sao 2x :: as pseudo classes eh somente 1x :)
+:active          ➡️ Quando o elemento esta ativo, ou seja, esta sendo pressionado, ex quando vc clica em um link.
+:visited         ➡️ Seleciona o link que foi visitado.
+:hover           ➡️ Quando o mouse passa por cima do elemento.
+:checked         ➡️ Usado em radio /checkbox/select.
+:disabled        ➡️ Elemento desabilitado /button/input.
+:enabled         ➡️ Elemento esta abilitado.
+:focus           ➡️ É aplicada quando um elemento recebe focus, o que pode ocorrer quando o usuario seleciona o elemento.
+:read-only       ➡️ Selecionaa input ou textarea que sao somente leitura.
+:empty           ➡️ o elemento que nao tem filho.
+
+:first-child     ➡️ primeiro filho/ex: primeira li de uma ul/ primeiro span de uma div.
+:first-of-type   ➡️ primeiro elemento do seu tipo entre os filhos do seu elemento pai.
+:last-child      ➡️ ultimo filho.
+:last-of-type    ➡️ ultimo elemento de seu tipo entre os filhos de seu elemento pai.
+:not()           ➡️ estiliza os elementos, exeto o que esta dentro dos ().
+:nth-child()     ➡️ seleciona o elemento baseado na sua posição. ex :nth-child(3) .
+:nth-last-child()➡️ seleciona o elemento baseado na sua posição, contando de tras para a frente.
+*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* active e hover ni link deu incompatibilidade*/
+
+a:active {
+    color: darkgreen;
+}
+a:hover {
+    color: red;
+}
+a:visited {
+    color: darkmagenta;
+}
+
+p:hover {
+    color: brown;
+}
+.teste1:checked{
+    width: 100px;
+    height: 100px;
+}
+input:checked{
+    width: 50px;
+    height: 50px;
+}
+/*so  funciona se no html estiver desable ai a configuraçao do css funciona, server
+ para mais para frente com java vc conseguir colocar um campo que precisa de uma 
+ resposta anterior por ex*/
+.teste2:disabled{
+    width: 150px;
+    height: 150px;
+}
+.teste3:focus {
+    border: 1px solid red;
+    outline: none;
+}    /*por padrao os navegadores ja dao um focus entao para setar 
+    tem que desabilitar  a outline*/
+
+ input:read-only{
+    border: 5px solid rgb(0, 255, 0);
+    outline: none;
+}
+.container {
+    height: 100px;
+    width: 100px;
+    background: red;
+}
+
+.container:empty {
+    background: blue;
+}
+/*caso a div esteja vazia ela ficara azul, se cheia ficara vermelha*/

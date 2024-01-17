@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div{
+    height: 200px;
+    width: 200px;
+    background: blue;
+}
+@media (max-width: 600px){
+    div {background: red;}
+}
+/*ao abrir no navegador em tela cheia a div esta em azul,
+se clicar em inspecionar e for deminuindo a tela quando chegar em 600px
+ela nao aplica mais o azul e sim o vermelho...que seria a configuraçao para uma tela menor.
+*/

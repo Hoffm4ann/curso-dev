@@ -1,0 +1,40 @@
+/*
+:first-child     ➡️ primeiro filho/ex: primeira li de uma ul/ primeiro span de uma div.
+:first-of-type   ➡️ primeiro elemento do seu tipo entre os filhos do seu elemento pai.
+:last-child      ➡️ ultimo filho.
+:last-of-type    ➡️ ultimo elemento de seu tipo entre os filhos de seu elemento pai.
+:not()           ➡️ estiliza os elementos, exeto o que esta dentro dos ().
+:nth-child()     ➡️ seleciona o elemento baseado na sua posição. ex :nth-child(3) .seleciona um filho especifico
+:nth-last-child()➡️ seleciona o elemento baseado na sua posição, contando de tras para a frente.
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+li:first-child{
+    color: red;
+}
+span:first-of-type{
+    color: red;
+
+}
+p:first-of-type{
+    color: blue;
+}
+li:last-child{
+    color: blue;
+}
+p:not(.container) {
+    color: red;
+}
+*/
+/*nesse caso selecionou o terceiro filho, numeracao crescente*/
+li:nth-child(3) {
+    color: red;
+}
+/*nesse caso ele esta selecionando o filho em ordem decrescente*/
+li:nth-last-child(1) {
+    color: blue;
+}

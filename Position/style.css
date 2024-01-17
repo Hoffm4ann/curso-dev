@@ -1,0 +1,51 @@
+/*
+position: static (Padrao) = Nao aceita valores de top bottom left rigth.
+position: fixed = fixa o elemento na tela. ele abre espaço atras dele tipo aconteceu com o background do desafio do css(difereça eh que quando vc move a pagina ele se mexe junto).
+position sticky = age como um adesivo, fixa o elemento so onde eu determinar.(precisa de um valor de margin ele flutua como o fixed mas ao chegar no margin setado ele para.
+position relative = posiçao relativa a posiçao inicial dele. (precisa setar a margin, ex 20px top...ele fica 20px relativo a posição inicial que ele estava, se colocado no elemento pai ele levara o filho junto)
+position absolute = posiçao abasoluta (Fixa) a algum elemento ou a pagina
+                    Se nao tiver pai /pai for static = posiciona referente a pagina. (ele se pocisiona referente a pagina, fica com espaço vaga atras'flutua' tem que setar parameltros
+                    Se o pai NAO for static = posiciona referente ao pai.
+                    (O elemento flutua abrindo espaço atras dele,
+
+                    Propriedades
+top (seta a distacia do top em pixel)
+bottom
+left
+rigth
+posiçôes sao setada sem o margin...ex somente o top e o tamanho top20px;
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 200vw;    /*proporcional a duas telas tanto o w quato o h*/
+    height: 200vw;
+    
+}
+.div-dad {
+    height: 350px;
+    width: 350px;
+    background-color: #ff1396;
+    position: sticky;
+    top: 20px;
+        
+}
+.div-son {
+    height: 150px;
+    width: 150px;
+    background-color: #fbff13; 
+    position: relative;
+    top: 30px;
+
+}
+/* Todos os elementos criados se nao forem setados para algum lugar os elementos sempre ficarao o maximo para esquerda e no topo */
+
+.segunda-son{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    position: relative;
+    top: 40px;
+
+}

@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    color: #5D5D7D;
+    font-weight: 400;
+
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.container-left {
+    display: inline-block;
+    width: 60%;
+    padding-left: 136px; /*padding aperta dentro da caixa*/
+    margin-top: 20%;
+    }
+
+.container-right {
+    display: inline-block;
+    background-color: rgba(93, 93, 125, 0.16);
+    height: 100vh;
+    width: 40%;
+    position: absolute;
+
+}
+
+img {
+    position: relative;
+    top: 25%;
+    right: 130px;
+}
+
+h1 {
+    font-size: 70px;
+    line-height: 80px;
+    Width: 368px; /*reduziu o texto*/
+}
+p{
+    font-size: 28px;
+    line-height: 48px;
+    opacity: 0.6;
+    margin-top: 15px;
+    width: 540px; /*reduziu o texto*/
+}
+button{
+    width: 269px;
+    height: 62px;
+    background: #9499ea;
+    box-shadow: 0px 10px 24px rgba(148, 153, 234, 0.0979959);
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.8;
+}
+button:active{
+    opacity: 0.5;
+}
+a{
+    font-size: 28px;
+    line-height: 41px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-right: 41px;
+    cursor: pointer;
+    
+}
+a:nth-child(2){
+    opacity: 0.4;
+}
+a:hover{
+    opacity: 0.8;
+}
+a:active{
+    opacity: 0.5;
+}
+header{
+    margin: 24px 0 0 57px;
+}
+/* lembrando estilo em cascata...
+media care tem que ficar na parte de baixo do codigo*/
+
+@media screen and (max-width:900px){
+.container-left{
+    width: 100%;
+    height: 50vh;
+    padding: 0;
+    margin: 0;
+    }
+.container-right {
+    display: block;
+    height: auto;
+    width: 100%;
+    position: static;
+    padding: 40px;
+}
+img {
+position: static;
+/*desse modo a imagem nunca passa de 90% */
+max-width: 90%;
+}   
+header{
+    display: none;
+}
+h1{
+    font-size: 36px;
+    line-height: 52px;
+    width: auto;
+    margin: 58px 50px 0 50px;
+    text-align: center;
+    }
+    p{
+        margin: 15px 40px;
+        width: auto;
+        text-align: center;
+        font-size: 14px;
+        line-height: 24px;
+    }   
+    /*para alinhar o botaofoi colocado a margin 0 e automatico,
+    se o automatico estiver nos dois lados ele centraliza o botao...
+    mas tem que estar em display block*/
+
+    button{
+        margin: 0 auto;
+        display: block;
+    }
+}
+/*pode ser usada mais de um media care para telas especificas*/
