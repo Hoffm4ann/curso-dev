@@ -5,11 +5,13 @@
     font-family: Oswald;
 
 }
-section{
+
+section {
     display: inline-block;
 
-    }
-h1{
+}
+
+h1 {
     width: 368px;
     color: #5D5D7D;
     font-size: 70px;
@@ -19,7 +21,8 @@ h1{
     margin-top: 381px;
 
 }
-p{
+
+p {
     margin-left: 136px;
     width: 540px;
     color: #5D5D7D;
@@ -30,7 +33,8 @@ p{
     margin-top: 15px;
 
 }
-button{
+
+button {
     width: 269px;
     height: 62px;
     flex-shrink: 0;
@@ -44,8 +48,9 @@ button{
     text-align: center;
     font-size: 24px;
     font-weight: 400;
-  
+
 }
+
 button:hover {
     opacity: 0.8;
 }
@@ -53,25 +58,129 @@ button:hover {
 button:active {
     opacity: 0.5;
 }
-.r-side{
+
+.r-side {
     display: inline-block;
     background-color: rgba(93, 93, 125, 0.16);
     height: 100vh;
     width: 40%;
     position: absolute;
-    
+
 }
-header{
+
+header {
     color: #5D5D7D;
     font-size: 28px;
     font-weight: 400;
     margin-left: 57px;
     margin-top: 24px;
-  
+
 }
 
-img{
+img {
     display: inline-block;
     margin-top: 144px;
     margin-left: 55px;
+}
+
+.home {
+    margin-right: 41px;
+    cursor: pointer;
+}
+
+.work {
+    margin-right: 41px;
+    cursor: pointer;
+    opacity: 0.5;
+
+}
+
+.about {
+    margin-right: 41px;
+    cursor: pointer;
+}
+
+.contact {
+    cursor: pointer;
+
+}
+
+a:hover {
+    opacity: 0.8;
+}
+a:active {
+    opacity: 0.5;
+}
+@media screen and (max-width: 1150px){
+    header{
+        display: none;
+    }
+section{
+    display: block;
+
+}
+h1{
+    width: 268px;
+    height: 104px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 52px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-top: 58px;
+    margin-left: 54px;
+}
+    p{
+        width: 296px;
+        color: #5D5D7D;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        opacity: 0.6;
+        margin-top: 15px;
+        margin-left: 40px;
+
+    }
+    button{
+        margin-top: 15px;
+        margin-left: 54px;   
+     }
+     img{
+        display: block;
+        margin-top: 47px;
+        width: 271px;
+        height: 322.95px;
+        padding: 0px, 0px, 0px, 0px;
+
+     }
+     .r-side{
+        display: block;
+        height: 100vh;
+        width: 100vw;
+        margin-top: 47px;
+     }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
