@@ -13,6 +13,7 @@ function nomeNaTela(){
 /*função so vai executar quando for chamada,
  por causa da funtion ela executou ate aqui
  e agora vai executar a parte do cogigo abaixo 
- por que esta sendo chamada
+ por que esta sendo chamada, pode ser chamada quantas vezes quiser,
+ executa todas as vezes que foi chamada.
  */
     nomeNaTela()
