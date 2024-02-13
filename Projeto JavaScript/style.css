@@ -12,7 +12,7 @@ body {
 }
 
 .logo {
-    width: 300px;
+    width: 215px;
     display: block;
     /*para centralizar com automatico nas duas margen so funciona quando estiver com display block, inline nao funciona.*/
     margin: 20px auto;
@@ -98,7 +98,7 @@ section {
 
 }
 
-.currency-value {
+.currency-value,.currency-value-to-convert {
     color: #555555;
     font-weight: 700;
     font-size: 20px;
