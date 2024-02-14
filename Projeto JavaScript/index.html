@@ -19,14 +19,21 @@
         <label>
             Corverter <b>de</b><br>
             <select>
-                <option>R$ Real Brasileiro</option>
+                <option value="real01">R$ Real Brasileiro</option>
+                <option value="dolar01">US$ Dólar Americano</option>
+                <option value="euro01">€ Euro</option>
+                <option value="libra01">£ Libra Esterlina</option>
+                <option value="bitcoin01"> BitCoin</option>
             </select><br>
         </label>
 
-        <label>Corverter<b>para</b><br>
+        <label>Corverter <b>para</b><br>
             <select class="currency-select">
                 <option value="dolar">US$ Dólar Americano</option>
+                <option value="real">R$ Real Brasileiro</option>
                 <option value="euro">€ Euro</option>
+                <option value="libra">£ Libra</option>
+                <option value="bitcoin">BitCoin</option>
             </select><br>
         </label>
 
@@ -38,8 +45,8 @@
         
         <section>
             <div class="currency-box">
-                <img class="arrow-img"src="/Projeto JavaScript/Assets/real.png" alt="logo-moeda-a-converter-brasil">
-                <p class="currency">Real</p>
+                <img class="currency-img2"src="/Projeto JavaScript/Assets/real.png" alt="logo-moeda-a-converter-brasil">
+                <p class="currency"id="currency-name2"></p>Real</p>
                 <p class="currency-value-to-convert">R$ 0,00</p>
             </div>
             
