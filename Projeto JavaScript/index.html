@@ -18,22 +18,22 @@
     <main>
         <label>
             Corverter <b>de</b><br>
-            <select>
-                <option value="real01">R$ Real Brasileiro</option>
-                <option value="dolar01">US$ Dólar Americano</option>
-                <option value="euro01">€ Euro</option>
-                <option value="libra01">£ Libra Esterlina</option>
-                <option value="bitcoin01"> BitCoin</option>
+            <select class="currency-select">
+                <option value="real">R$ Real Brasileiro</option>
+                <option value="dolar">US$ Dólar Americano</option>
+                <option value="euro">€ Euro</option>
+                <option value="libra">£ Libra Esterlina</option>
+                <option value="bitcoin"> BitCoin</option>
             </select><br>
         </label>
 
         <label>Corverter <b>para</b><br>
-            <select class="currency-select">
-                <option value="dolar">US$ Dólar Americano</option>
-                <option value="real">R$ Real Brasileiro</option>
-                <option value="euro">€ Euro</option>
-                <option value="libra">£ Libra</option>
-                <option value="bitcoin">BitCoin</option>
+            <select class="currency-select2">
+                <option value="dolar2">US$ Dólar Americano</option>
+                <option value="real2">R$ Real Brasileiro</option>
+                <option value="euro2">€ Euro</option>
+                <option value="libra2">£ Libra</option>
+                <option value="bitcoin2">BitCoin</option>
             </select><br>
         </label>
 
@@ -45,21 +45,21 @@
         
         <section>
             <div class="currency-box">
-                <img class="currency-img2"src="/Projeto JavaScript/Assets/real.png" alt="logo-moeda-a-converter-brasil">
-                <p class="currency"id="currency-name2"></p>Real</p>
+                <img class="currency-img"src="/Projeto JavaScript/Assets/real.png" alt="logo-moeda-a-converter-brasil">
+                <p class="currency-name">Real</p>
                 <p class="currency-value-to-convert">R$ 0,00</p>
             </div>
             
                 <img class="arrow-img" src="/Projeto JavaScript/Assets/seta.png" alt="seta">
 
             <div class="currency-box">
-                <img class="currency-img" src="/Projeto JavaScript/Assets/dollar.png" alt="logo-moeda-a-convertida-dollar">
-                <p class="currency" id="currency-name">Dolár Americano</p>
+                <img class="currency-img2" src="/Projeto JavaScript/Assets/dollar.png" alt="logo-moeda-convertida">
+                <p class="currency-name2">Dolár Americano</p>
                 <p class="currency-value">US$ 0,00</p>
             </div>
         </section>
     </main>
-   
+
 </body>
 <script src="script.js"></script>
 </html>
