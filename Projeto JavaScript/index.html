@@ -9,12 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    
     <title>Projeto Conversor de Moeda</title>
+    
 </head>
 
 <body>
-        
-    <img class="logo" src="/Projeto JavaScript/Assets/animacao.gif" alt="Logo Animado">
+  
+    <img class="logo" src="./Assets/animacao.gif" alt="Logo Animado">
     <main>
         <label>
             Corverter <b>de</b><br>
@@ -38,27 +40,33 @@
         </label>
 
         <label>
-            Valor <br>
-            <input class="input-currency" placeholder="10.000.000">
+            <b>Valor:</b> <br>
+            <input type = "number" inputmode = "tel"class="input-currency" placeholder="1234567890">
         </label>
         <button class="convert-button">Converter</button>
         
         <section>
             <div class="currency-box">
-                <img class="currency-img"src="/Projeto JavaScript/Assets/real.png" alt="logo-moeda-a-converter-brasil">
+                <img class="currency-img"src="./Assets/real.png" alt="logo-moeda-a-converter-brasil">
                 <p class="currency-name">Real</p>
                 <p class="currency-value-to-convert">R$ 0,00</p>
             </div>
             
-                <img class="arrow-img" src="/Projeto JavaScript/Assets/seta.png" alt="seta">
+                <img class="arrow-img" src="./Assets/seta.png" alt="seta">
 
             <div class="currency-box">
-                <img class="currency-img2" src="/Projeto JavaScript/Assets/dollar.png" alt="logo-moeda-convertida">
+                <img class="currency-img2" src="./Assets/dollar.png" alt="logo-moeda-convertida">
                 <p class="currency-name2">Dolár Americano</p>
                 <p class="currency-value">US$ 0,00</p>
             </div>
         </section>
     </main>
+
+<div class="whats">
+    <a href="https://wa.me/5547999591415" target="_blank">
+    <img src="./Assets/whatsapp.png" width="75px" alt="Fale Comigo" title="Fale Comigo">
+</a>
+</div>
 
 </body>
 <script src="script.js"></script>
