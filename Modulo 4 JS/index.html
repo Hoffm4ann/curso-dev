@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input placeholder="Digite o nome do contato">
+    <p></p>
+    <button onclick="search()">Procurar Contato</button>
+</body>
+<script>
+
+
+
+    let p = document.querySelector("p")
+    let input = document.querySelector("input")
+
+    const  contacts = [
+{ name:"Rodolfo", number: "(19) 94343-3434"},
+{ name:"Paulo", number: "(12) 93443-3434"},
+{ name:"Rodolfo", number: "(13) 94566-3434"},
+{ name:"Rodolfo", number: "(19) 94343-3434"},
+]
+function search(){
+/*forof 
+for(const contact of contacts){
+    if(input.vamue.toLowerCase()=== contact.name.toLowerCase()){
+        p.innerHTML = `Contato Encontrado Nome:${contact.name} Tel: ${contact.number}`
+        
+        break 
+    }
+    */
+}
+    for (let i = 0; i< contacts.length ;i++){
+        if(input.value.toLowerCase() === contacts[i].name.toLowerCase()){
+            /* p.innerHTML = "Contato Encontrado Nome: " + contacts[i].name + 
+            " Tel: " + contacts[i].number modo com aspas duplas alem dp template strings*/
+            p.innerHTML = `Contato Encontrado Nome:${contacts[i].name} Tel: ${contacts[i].number}`
+            
+            break
+
+        }else{
+            p.innerHTML = "Contato nao encontrado, tente novamente"
+        }
+
+
+
+    }
+
+
+}
+</script>
+</html>
