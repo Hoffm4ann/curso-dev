@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação do documento como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a configuração de viewport para dispositivos móveis -->
+    <title>Fim de Jogo</title> <!-- Define o título da página -->
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo de estilo CSS -->
+</head>
+
+<body>
+
+    <div class="container"> <!-- Define um contêiner principal -->
+        <h1 id="winner-info"></h1> <!-- Título para exibir o vencedor -->
+        <p id="score-info"><br></p> <!-- Parágrafo para exibir informações sobre a pontuação -->
+        <img id="result-image" src="win-end.png" alt="Resultado do Jogo" style="max-width: 360px;">
+        <button id="play-again-btn">Jogar Novamente</button> <!-- Botão para jogar novamente -->
+    </div>
+
+    <script>
+        // Obtém os dados do jogo da sessionStorage
+        const winner = sessionStorage.getItem('winner'); // Vencedor do jogo
+        const loser = sessionStorage.getItem('loser'); // Perdedor do jogo
+        const scoreInfo = sessionStorage.getItem('scoreInfo'); // Informações sobre a pontuação
+        const humanScore = sessionStorage.getItem('humanScore'); // Pontuação do jogador humano
+        const machineScore = sessionStorage.getItem('machineScore'); // Pontuação da máquina
+
+        // Exibe as informações na página
+        document.getElementById('winner-info').textContent = `${winner} ganhou!`; // Exibe o vencedor
+        document.getElementById('score-info').innerHTML = `${winner} ganhou com ${winner === "Humano" ? humanScore : machineScore} pontos.<br><br>Pontuação do perdedor: ${loser === "Humano" ? humanScore : machineScore} pontos.`; // Exibe informações sobre a pontuação
+        document.getElementById('result-image').src = winner === "Humano" ? "win-end.png" : "lose-end.png"; // Define a imagem do resultado do jogo
+
+        // Adiciona um evento de clique ao botão "Jogar Novamente"
+        document.getElementById('play-again-btn').addEventListener('click', () => {
+            sessionStorage.clear(); // Limpa os dados do jogo armazenados na sessionStorage
+            window.location.href = "index.html"; // Redireciona para a página inicial para iniciar um novo jogo
+        });
+    </script> <!-- Script JavaScript para manipulação do jogo -->
+
+</body>
+
+</html>

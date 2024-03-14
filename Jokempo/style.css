@@ -1,90 +1,145 @@
-*{
+/* Define estilos básicos para resetar margens, preenchimento e a caixa do modelo */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-}
-body{
-    background: url("./assets/2.png");
-    
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-.container{
-    padding: 20px;
-    background-color: #330000;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
-button:hover{
-    opacity: 0.7;
-}
-.buttons{
-    margin: 30px 0;
-    display: flex;
-    gap: 40px;
-}
-
-button{
-    padding: 10px;
-    font-size: 50px;
-    cursor: pointer;
-    border: none;
-    border-radius: 10px;
-    transition: opacity 0.5s ease-in-out;
-    
-}
-#rock{
-    background-color: #4d71be;
+/* Estilos para o corpo da página */
+body {
+    background: url("assets/2.png"); /* Define a imagem de fundo */
+    background-size: cover; /* Garante que a imagem de fundo cubra toda a tela */
+    display: flex; /* Define um layout flexível para centralizar os elementos */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Garante que o corpo da página tenha pelo menos 100% da altura da viewport */
 }
 
-#paper{
-    background-color: #ee64ee;
+/* Estilos para o contêiner principal */
+.container {
+    padding: 20px; /* Espaçamento interno */
+    background-color: #330000; /* Cor de fundo */
+    border-radius: 10px; /* Borda arredondada */
+    display: flex; /* Layout flexível para centralizar os elementos internos */
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
 }
 
-#scissors{
-    background-color: #63b69d;
-}
-p{
-    font-weight: bold;
-    margin-bottom: 10px;
+/* Estilos para botões ao passar o mouse por cima */
+button:hover {
+    opacity: 0.7; /* Reduz a opacidade ao passar o mouse */
 }
 
-.your-score span{
-    color: blue;
-}
-.machine-score span{
-    color: red ;
-}
-section{
-    display: flex;
-    gap: 200px;
+/* Estilos para os botões de escolha (pedra, papel, tesoura) */
+.buttons {
+    margin: 30px 0; /* Margem superior e inferior */
+    display: flex; /* Layout flexível para alinhar os botões */
+    gap: 40px; /* Espaçamento entre os botões */
 }
 
-.vela{
-max-width: 70px;
-max-height: 50px;
+button {
+    padding: 10px; /* Espaçamento interno */
+    font-size: 50px; /* Tamanho da fonte */
+    cursor: pointer; /* Altera o cursor ao passar por cima */
+    border: none; /* Remove a borda */
+    border-radius: 10px; /* Borda arredondada */
+    transition: opacity 0.5s ease-in-out; /* Transição suave da opacidade */
 }
-.vela2{
-max-width: 70px;
-max-height: 50px;
+
+/* Estilos para cada botão específico */
+#rock {
+    background-color: #4d71be; /* Cor de fundo para a opção de pedra */
 }
-h1{
-    color: #ffffff;
+
+#paper {
+    background-color: #ee64ee; /* Cor de fundo para a opção de papel */
 }
-p{
-    color: #ffffff;
+
+#scissors {
+    background-color: #63b69d; /* Cor de fundo para a opção de tesoura */
 }
-.whats{
-    position:fixed;
-    bottom: 30px;
-    right: 30px;
-    z-index: 999;
+
+/* Estilos para os elementos de texto (pontuações) */
+p {
+    font-weight: bold; /* Define a fonte em negrito */
+    margin-bottom: 10px; /* Margem inferior */
+}
+
+.your-score span {
+    color: blue; /* Cor do texto para a pontuação do jogador */
+}
+
+.machine-score span {
+    color: red; /* Cor do texto para a pontuação da máquina */
+}
+
+/* Estilos para a seção com as velas */
+section {
+    display: flex; /* Layout flexível para alinhar os elementos */
+    gap: 200px; /* Espaçamento entre os elementos */
+}
+
+/* Estilos para as imagens das velas */
+.vela {
+    max-width: 70px; /* Largura máxima */
+    max-height: 50px; /* Altura máxima */
+}
+
+.vela2 {
+    max-width: 70px; /* Largura máxima */
+    max-height: 50px; /* Altura máxima */
+}
+
+/* Estilos para os elementos de texto (título e texto) */
+h1,
+p {
+    color: #ffffff; /* Cor do texto */
+}
+
+/* Estilos para o ícone do WhatsApp */
+.whats {
+    position: fixed; /* Define a posição fixa */
+    bottom: 30px; /* Distância do fundo */
+    right: 30px; /* Distância da direita */
+    z-index: 999; /* Z-index para garantir que fique sobre os outros elementos */
+}
+
+/* Estilos para o botão "Jogar Novamente" */
+#play-again-btn {
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white; /* Cor do texto branco */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Cursor de mão ao passar por cima */
+    transition: background-color 0.3s; /* Transição suave da cor de fundo */
+    margin-top: 15px; /* Margem superior */
+}
+
+/* Estilos para alterar a cor do botão ao passar o mouse por cima */
+#play-again-btn:hover {
+    background-color: #45a049; /* Cor de fundo verde mais escura */
+}
+
+/* Estilos para telas com largura de até 400px */
+@media screen and (max-width: 380px) {
+    .container {
+        padding: 10px; /* Espaçamento interno reduzido */
+    }
+
+    .buttons {
+        margin: 20px 0; /* Margem superior e inferior */
+        flex-direction: column; /* Empilha os botões verticalmente */
+        gap: 20px; /* Espaçamento entre os botões */
+    }
+
+    button {
+        font-size: 40px; /* Tamanho da fonte reduzido para os botões */
+    }
+
+    #play-again-btn {
+        font-size: 14px; /* Tamanho da fonte reduzido para o botão "Jogar Novamente" */
+    }
 }
