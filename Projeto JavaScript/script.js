@@ -3,17 +3,7 @@ const currencySelect = document.querySelector(".currency-select")
 const currencySelect2 = document.querySelector(".currency-select2")
 
 
-const apiKey = 'c1a4516321ea94bc97a98157';
-const apiUrl = 'https://v6.exchangerate-api.com/v6/c1a4516321ea94bc97a98157/latest/USD';
 
-fetch(`${apiUrl}?access_key=${apiKey}`)
-  .then(response => response.json())
-  .then(data => {
-    // Aqui você pode acessar os dados da resposta da API e atualizar as taxas de câmbio no seu aplicativo
-  })
-  .catch(error => {
-    console.error('Erro ao obter taxas de câmbio:', error);
-  });
 
 
    const dolarToday = 5.2
